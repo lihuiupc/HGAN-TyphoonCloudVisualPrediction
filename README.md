@@ -4,7 +4,9 @@ Requirements:
 Python 2.7
 Tensorflow 1.2.0
 
-Test the model I uploaded:
+You can download the pretrained model here https://pan.baidu.com/s/1wBwbojKv0SIZh-Le8w5CtQ. The password is rvia.
+The downloaded three files should be put in 'HGAN_TyphoonCloudVisualPrediction/Save/Models/'.
+Test the model:
 python avg_runner -n name -l (xx/xx)/HGAN_TyphoonCloudVisualPrediction/Save/Models/model.ckpt -T
 Train a new model:
 python avg_runner.py -n name -s steps
