@@ -30,5 +30,5 @@ The models trained and generated images will be saved in '/Save/..'
 
 The following example shows continuous typhoon cloud evolution in ten nearest time steps. 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
-![image](<img src="https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif" width="300" height="450" />)
+
 Thanks for the code ''https://github.com/dyelax/Adversarial_Video_Generation''.
