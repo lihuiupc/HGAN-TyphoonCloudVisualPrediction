@@ -32,4 +32,8 @@ The following example shows continuous typhoon cloud evolution in ten nearest ti
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
 
+The following maps show optical flow between time adjacent typhoon cloud images based on the optical flow model presented by the paper 'High accuracy optical flow estimation based on a theory for warping'.
+
+![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/flow_1s.gif)
+
 Thanks for the code ''https://github.com/dyelax/Adversarial_Video_Generation''.
