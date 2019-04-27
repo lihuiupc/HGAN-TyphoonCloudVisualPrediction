@@ -14,6 +14,8 @@ Testing data:/Data/Test/xx/
 
 The models trained and generated images will be saved in '/Save/..'
 
-The 'generated_1second.tif' shows continuous generated images in ten nearest time steps. The 'truth_1second.tif' is ground truth ones of 'generated_1second.tif'.
+The following example shows continuous typhoon cloud evolution in ten nearest time steps. 
+ 
+
 
 Thanks for the code ''https://github.com/dyelax/Adversarial_Video_Generation''.
