@@ -15,7 +15,5 @@ Testing data:/Data/Test/xx/
 The models trained and generated images will be saved in '/Save/..'
 
 The following example shows continuous typhoon cloud evolution in ten nearest time steps. 
- 
-
 
 Thanks for the code ''https://github.com/dyelax/Adversarial_Video_Generation''.
