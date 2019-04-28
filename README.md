@@ -32,7 +32,7 @@ The following example shows continuous typhoon cloud movement in ten nearest tim
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
 
-The following maps show optical flow between time adjacent typhoon cloud images generated from our model based on the optical flow model presented by the paper 'High accuracy optical flow estimation based on a theory for warping'. The optical flow maps indicate the direction and size of typhoon cloud movement.
+The following maps show optical flow between time adjacent typhoon cloud images generated from our model based on the optical flow model presented by the paper 'High accuracy optical flow estimation based on a theory for warping'. The optical flow maps indicate the direction and size of typhoon cloud movements.
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/flow_1s.gif)
 
