@@ -28,11 +28,11 @@ Testing data:/Data/Test/xx/
 The models trained and generated images will be saved in '/Save/..'
 
 
-The following example shows continuous typhoon cloud evolution in ten nearest time steps. 
+The following example shows continuous typhoon cloud movement in ten nearest time steps. 
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
 
-The following maps show optical flow between time adjacent typhoon cloud images generated from our model based on the optical flow model presented by the paper 'High accuracy optical flow estimation based on a theory for warping'.
+The following maps show optical flow between time adjacent typhoon cloud images generated from our model based on the optical flow model presented by the paper 'High accuracy optical flow estimation based on a theory for warping'. The optical flow maps indicate the direction and size of typhoon cloud movement.
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/flow_1s.gif)
 
