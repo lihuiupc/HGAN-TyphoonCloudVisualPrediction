@@ -28,11 +28,11 @@ Testing data:/Data/Test/xx/
 The models trained and generated images will be saved in '/Save/..'
 
 
-The following demo shows the prediction of continuous typhoon cloud movement in ten time steps.
+The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps.
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
 
-The following dynamic map shows the optical flow for the predited typhoon cloud sequence. The optical flow indicates the direction and size of typhoon cloud movements.
+The following dynamic map shows the optical flow for the **predited** typhoon cloud sequence. The optical flow indicates the direction and size of typhoon cloud movements.
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/flow_1s.gif)
 
