@@ -32,8 +32,8 @@ The following demo shows the prediction of continuous typhoon cloud movement in 
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
 
-The following maps show optical flow between predicted time adjacent typhoon cloud images based on the optical flow model presented by the paper 'High accuracy optical flow estimation based on a theory for warping'. The optical flow maps indicate the direction and size of typhoon cloud movements.
+The following dynamic map shows the optical flow for the predited typhoon cloud sequence. The optical flow indicates the direction and size of typhoon cloud movements.
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/flow_1s.gif)
 
-Thanks for the code ''https://github.com/dyelax/Adversarial_Video_Generation''.
+We acknowledge the authors for the code released at ''https://github.com/dyelax/Adversarial_Video_Generation'', which provides useful operations for our implementation.
