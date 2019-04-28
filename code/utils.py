@@ -44,33 +44,8 @@ def denormalize_frames(frames):
 
     return new_frames
 
-def clip_l2_diff(clip):
-    """
-    @param clip: A numpy array of shape [c.TRAIN_HEIGHT, c.TRAIN_WIDTH, (3 * (c.HIST_LEN + 1))].
-    @return: The sum of l2 differences between the frame pixels of each sequential pair of frames.
-    """
-    diff = 0
-    for i in xrange(c.HIST_LEN):
-        frame = clip[:, :, 3 * i:3 * (i + 1)]
-        next_frame = clip[:, :, 3 * (i + 1):3 * (i + 2)]
-        # noinspection PyTypeChecker
-        diff += np.sum(np.square(next_frame - frame))
-
-    return diff
 
 def get_full_clips(data_dir, num_clips, num_rec_out=1):
-    """
-    Loads a batch of random clips from the unprocessed train or test data.
-
-    @param data_dir: The directory of the data to read. Should be either c.TRAIN_DIR or c.TEST_DIR.
-    @param num_clips: The number of clips to read.
-    @param num_rec_out: The number of outputs to predict. Outputs > 1 are computed recursively,
-                        using the previously-generated frames as input. Default = 1.
-
-    @return: An array of shape
-             [num_clips, c.TRAIN_HEIGHT, c.TRAIN_WIDTH, (3 * (c.HIST_LEN + num_rec_out))].
-             A batch of frame sequences with values normalized in range [-1, 1].
-    """
     clips = np.empty([num_clips,
                       c.FULL_HEIGHT,
                       c.FULL_WIDTH,
@@ -94,18 +69,7 @@ def get_full_clips(data_dir, num_clips, num_rec_out=1):
 
     return clips
 def get_train_clips(data_dir, num_clips, num_rec_out=1):
-    """
-    Loads a batch of random clips from the unprocessed train or test data.
 
-    @param data_dir: The directory of the data to read. Should be either c.TRAIN_DIR or c.TEST_DIR.
-    @param num_clips: The number of clips to read.
-    @param num_rec_out: The number of outputs to predict. Outputs > 1 are computed recursively,
-                        using the previously-generated frames as input. Default = 1.
-
-    @return: An array of shape
-             [num_clips, c.TRAIN_HEIGHT, c.TRAIN_WIDTH, (3 * (c.HIST_LEN + num_rec_out))].
-             A batch of frame sequences with values normalized in range [-1, 1].
-    """
     clips = np.empty([num_clips,
                       c.TRAIN_HEIGHT,
                       c.TRAIN_WIDTH,
@@ -135,30 +99,12 @@ def get_train_batch(train_batch_size, num_rec_out=1):
 
 
 def get_test_batch(test_batch_size, num_rec_out=1):
-    """
-    Gets a clip from the test dataset.
 
-    @param test_batch_size: The number of clips.
-    @param num_rec_out: The number of outputs to predict. Outputs > 1 are computed recursively,
-                        using the previously-generated frames as input. Default = 1.
-
-    @return: An array of shape:
-             [test_batch_size, c.TEST_HEIGHT, c.TEST_WIDTH, (3 * (c.HIST_LEN + num_rec_out))].
-             A batch of frame sequences with values normalized in range [-1, 1].
-    """
     return get_full_clips(c.TEST_DIR, test_batch_size, num_rec_out=num_rec_out)
 
 
-##
-# Error calculation
-##
 
-# TODO: Add SSIM error http://www.cns.nyu.edu/pub/eero/wang03-reprint.pdf
-# TODO: Unit test error functions.
-
-
-
-def psnr_error(target, ref):
+def psnr_com(target, ref):
     
     target_data = numpy.array(target, dtype=numpy.float64)
     ref_data = numpy.array(ref,dtype=numpy.float64)
