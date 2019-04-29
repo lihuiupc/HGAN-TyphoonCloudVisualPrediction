@@ -8,7 +8,7 @@ Python 2.7
 Tensorflow 1.2.0
 
 
-You can download the pretrained model here https://pan.baidu.com/s/1wBwbojKv0SIZh-Le8w5CtQ. The password is rvia.
+You can download the pretrained model here https://pan.baidu.com/s/1Eyanke10-h75vamsWK5MYQ. The password is vtmk.
 The downloaded three files should be put in 'HGAN_TyphoonCloudVisualPrediction/Save/Models/'.
 
 Test the model:
