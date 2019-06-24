@@ -5,7 +5,7 @@ import random
 from d_scale_model import DScaleModel
 from loss_functions import adv_loss
 import constants as c
-
+import copy
 
 # noinspection PyShadowingNames
 class DiscriminatorModel:
@@ -194,12 +194,17 @@ class DiscriminatorModel:
         c_feed_dict = feed_dict.copy()
         if len(buff) > 1:
            buff = random.sample(buff,1)
-        for i in range(len(buff)):
-            feed_dict = dict(feed_dict,**buff[i])
-        #print(feed_dict)
-        _, global_loss, global_step, summaries = self.sess.run(
-            [self.train_op, self.global_loss, self.global_step, self.summaries],
-            feed_dict=feed_dict)
+        for i in range(len(buff)):    
+            label1 = feed_dict[self.labels]
+            label2 = buff[i][self.labels]
+            label = np.concatenate([label1,label2])
+            feed_dict[self.labels]=label
+            for scale_num in xrange(self.num_scale_nets):
+                scale_net = self.scale_nets[scale_num]
+                input_frames1 = feed_dict[scale_net.input_frames]
+                input_frames2 = buff[i][scale_net.input_frames]
+                input_frame = np.concatenate([input_frames1,input_frames2])
+                feed_dict[scale_net.input_frames]= input_frame
 
 
         ##
