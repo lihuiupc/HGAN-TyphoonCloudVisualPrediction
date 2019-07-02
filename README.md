@@ -1,4 +1,4 @@
-visual prediction of typhoon clouds with hierarchical generative adversarial networks
+Visual Prediction of Typhoon Clouds with Hierarchical Generative Adversarial Networks
 =======================================================================================
 This is a tensorflow implementation of visual prediction of typhoon clouds with hierarchical generative adversarial networks.
 
