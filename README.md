@@ -44,7 +44,7 @@ The following dynamic map shows the optical flow for the **predited** typhoon cl
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/Demos/morakot_gen_flow.gif)
 
-(2)Demo 2 ( Typhoon **Maria** ) :
+* (2)Demo 2 ( Typhoon **Maria** ) :
 
 The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of typhoon Maria.
 
