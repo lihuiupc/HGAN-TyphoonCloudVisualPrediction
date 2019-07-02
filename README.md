@@ -40,7 +40,7 @@ The following demo shows the **prediction** of continuous typhoon cloud movement
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/Demos/morakot_gen.gif)
 
-The following dynamic map shows the optical flow for the **predited** typhoon cloud sequence. The optical flow indicates the direction and size of typhoon cloud movements.
+The following dynamic map shows the optical flow for the **predicted** typhoon cloud sequence. The optical flow indicates the direction and size of typhoon cloud movements.
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/Demos/morakot_gen_flow.gif)
 
@@ -50,7 +50,7 @@ The following demo shows the **prediction** of continuous typhoon cloud movement
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/Demos/maria_gen.gif)
 
-The following dynamic map shows the optical flow for the **predited** typhoon cloud sequence. 
+The following dynamic map shows the optical flow for the **predicted** typhoon cloud sequence. 
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/Demos/maria_gen_flow.gif)
 
