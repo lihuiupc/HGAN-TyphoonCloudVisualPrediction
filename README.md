@@ -38,7 +38,7 @@ Results demos
 
 The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of typhoon Morakot.
 
-![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
+![image]( (https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif), width=375)
 
 The following dynamic map shows the optical flow for the **predited** typhoon cloud sequence. The optical flow indicates the direction and size of typhoon cloud movements.
 
