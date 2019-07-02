@@ -30,8 +30,10 @@ Testing data:/Data/Test/xx/
 
 The models trained and generated images will be saved in '/Save/..'
 
+Results demos
+-------------
 
-The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps.
+The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of typhoon Morakot.
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/generated_1second.gif)
 
