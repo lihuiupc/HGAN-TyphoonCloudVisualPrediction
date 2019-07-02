@@ -45,12 +45,13 @@ The following dynamic map shows the optical flow for the **predited** typhoon cl
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/flow_1s.gif)
 
 (2)Demo 2:
+
 The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of typhoon Maria.
+
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/maria_gen.gif)
+
 The following dynamic map shows the optical flow for the **predited** typhoon cloud sequence. 
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/maria_gen_flow.gif)
-
-
 
 We acknowledge the authors for the code released at ''https://github.com/dyelax/Adversarial_Video_Generation'', which provides useful operations for our implementation.
