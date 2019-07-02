@@ -1,10 +1,8 @@
-Visual Prediction of Typhoon Clouds with Hierarchical Generative Adversarial Networks
-=======================================================================================
+#Visual Prediction of Typhoon Clouds with Hierarchical Generative Adversarial Networks
 This is a tensorflow implementation of visual prediction of typhoon clouds with hierarchical generative adversarial networks.
 
 
-Requirements:
--------------
+##Requirements:
 
 Python 2.7
 
@@ -30,8 +28,8 @@ Testing data:/Data/Test/xx/
 
 The models trained and generated images will be saved in '/Save/..'
 
-Results demos
--------------
+##Results demos
+(1) Demo 1:
 
 The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of typhoon Morakot.
 
