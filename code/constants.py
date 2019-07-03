@@ -156,9 +156,9 @@ L_NUM = 1
 ALPHA_NUM = 1
 
 # the percentage of the adversarial loss to use in the combined loss
-LAM_ADV = 9
+LAM_ADV = 20
 # the percentage of the lp loss to use in the combined loss
-LAM_LP = 0.1
+LAM_LP = 0.05
 # the percentage of the GDL loss to use in the combined loss
 LAM_GDL = 0.001
 #the percentage of the tv loss to use in the combined loss 
