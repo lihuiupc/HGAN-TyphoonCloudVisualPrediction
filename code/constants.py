@@ -76,7 +76,7 @@ def set_test_dir(directory):
 # root directory for all data
 DATA_DIR = get_dir('../Data/')
 # directory of unprocessed training frames
-TRAIN_DIR = os.path.join(DATA_DIR, '/Train/')
+TRAIN_DIR = os.path.join(DATA_DIR, 'Train/')
 # directory of unprocessed test frames
 TEST_DIR = os.path.join(DATA_DIR, 'Test/')
 
