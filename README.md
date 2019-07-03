@@ -34,7 +34,7 @@ The models trained and generated images will be saved in '/Save/..'
 
 Results demos
 ----
-* (1) Demo 1 ( Typhoon **Morakot** ) :
+*  Demo 1 ( Typhoon **Morakot** ) :
 
 The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of typhoon Morakot.
 
@@ -44,7 +44,7 @@ The following dynamic map shows the optical flow for the **predicted** typhoon c
 
 ![image]( https://github.com/lihuiupc/HGAN_TyphoonCloudVisualPrediction/blob/master/Demos/morakot_gen_flow.gif)
 
-* (2)Demo 2 ( Typhoon **Maria** ) :
+*  Demo 2 ( Typhoon **Maria** ) :
 
 The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of typhoon Maria.
 
