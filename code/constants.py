@@ -162,7 +162,7 @@ LAM_LP = 0.05
 # the percentage of the GDL loss to use in the combined loss
 LAM_GDL = 0.001
 #the percentage of the tv loss to use in the combined loss 
-LAM_TV = 0.001
+LAM_TV = 0.0001
 
 ##
 # Generator model
