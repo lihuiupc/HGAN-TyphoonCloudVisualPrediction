@@ -36,7 +36,7 @@ Results demos
 ----
 *  Demo 1 ( Typhoon **Morakot** ) :
 
-The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of the typhoon Morakot.
+The following demo shows the **prediction** of continuous typhoon cloud movements in ten time steps of the typhoon Morakot.
 
 ![image]( https://github.com/lihuiupc/HGAN-TyphoonCloudVisualPrediction/blob/master/Demos/morakot_gen.gif)
 
@@ -46,7 +46,7 @@ The following dynamic map shows the optical flow for the **predicted** typhoon c
 
 *  Demo 2 ( Typhoon **Maria** ) :
 
-The following demo shows the **prediction** of continuous typhoon cloud movement in ten time steps of the typhoon Maria.
+The following demo shows the **prediction** of continuous typhoon cloud movements in ten time steps of the typhoon Maria.
 
 ![image]( https://github.com/lihuiupc/HGAN-TyphoonCloudVisualPrediction/blob/master/Demos/maria_gen.gif)
 
