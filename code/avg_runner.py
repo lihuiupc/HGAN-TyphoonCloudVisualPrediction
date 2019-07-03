@@ -7,7 +7,7 @@ from utils import get_train_batch, get_test_batch
 import constants as c
 from g_model import GeneratorModel
 from d_model import DiscriminatorModel
-#CUDA_VISIBLE_DEVICES=1
+
 
 class AVGRunner:
     def __init__(self, num_steps, model_load_path, num_test_rec):
@@ -66,8 +66,7 @@ class AVGRunner:
             if c.ADVERSARIAL:
                 # update discriminator
                 batch = get_train_batch(c.BATCH_SIZE, num_rec_out=1)
-                #print 'Training discriminator...'
-		###self.d_model.train_step(batch, self.g_model)
+                print 'Training discriminator...'
                 self.buff.append(self.d_model.train_step(batch, self.buff,self.g_model))####(self.buff.append,self.buff)
                 if len(self.buff) > 100:
                    for i in range(len(self.buff)-100):
@@ -75,7 +74,7 @@ class AVGRunner:
 
             # update generator
             batch = get_train_batch(c.BATCH_SIZE, num_rec_out=1)
-            #print 'Training generator...'
+            print 'Training generator...'
             self.global_step = self.g_model.train_step(
                 batch, discriminator=(self.d_model if c.ADVERSARIAL else None))
 
@@ -128,7 +127,7 @@ def main():
     load_path = None
     test_only = False
     num_test_rec = 10  # number of recursive predictions to make on test
-    num_steps = 1000001
+    num_steps = 100000
     try:
         opts, _ = getopt.getopt(sys.argv[1:], 'l:t:r:a:n:s:OTH',
                                 ['load_path=', 'test_dir=', 'recursions=', 'adversarial=', 'name=',
